@@ -1,0 +1,273 @@
+h1, h2 {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+html, body {
+	margin: 0;
+	padding:0;
+    height:100%;
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+
+section {
+    display: block;
+    height: 100%;
+	width:  100%;
+    padding: 4.16665vw;
+	box-sizing:  border-box;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+span img, span div {
+	display: inline;
+}
+
+span {
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap;  */
+	width: 100%;
+	height: auto;
+	margin-top: 15%;
+    /* grid-template-areas: "image bio hobbies"; */
+	justify-content: space-evenly;
+	column-gap: 3rem;
+	text-align: left;
+}
+
+span div p{
+	width: 300px;
+	margin: 0px;
+}
+
+form {
+	height: 80%;
+	width: 100%;
+	display: block;
+}
+
+textarea {
+	resize: none;
+	width: 40%;
+	height: 45%;
+}
+
+.Section {
+	text-align: center;
+	color: black;
+	background-color: #F7FFFF;
+	position: relative;
+}
+
+.Section-alt {
+	text-align: center;
+	color: #F7FFFF;
+	background-color: #233C5B;
+	position: relative;
+}
+
+.Section h2, .Section-alt h2 {
+	margin-top: 2vw;
+	font-size: 32px;
+}
+
+.RedLine {
+	width: 20%;
+	height: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 35px;
+	background-color: rgb(226, 12, 26);
+}
+
+.Section-alt span h3 {
+	color: gold;
+}
+
+
+#Welcome {
+	text-align: center;
+	color: #F7FFFF;
+	background-color: #0d2c5a;
+	height:95%;
+}
+
+#Welcome {
+	background: linear-gradient(to bottom,rgba(66, 135, 245, 0.35), #0d2c5a), url("giphy.gif");
+	background-size: cover;
+}
+
+#WelcomeText {
+	margin-top: 20%;
+	margin-left: 0;
+}
+
+#WelcomeText h1 {
+	font-size: 48px;
+	border-bottom: 5px solid rgb(226, 12, 26);
+}
+
+#WelcomeText h2 {
+	font-size: 32px;
+}
+
+#NavBar {
+	background-color: #0d2c5a;
+	height: 5%;
+	width: 100%;
+	color: #F7FFFF;
+	display: grid;
+	place-items: center;
+	z-index: 100;
+}
+
+#NavBar a {
+	color: #F7FFFF;
+	text-decoration: none;
+	margin: auto 5px;
+}
+
+#NavBar a:hover {
+	color: gold;
+}
+
+#NavBar div {
+	margin: auto auto;
+	width: fit-content;
+}
+
+#Portrait {
+	width:225px;
+	height:350px;
+	margin-right: 3em;
+}
+
+#Contact {
+	height: 90%;
+}
+
+#Footer {
+	width:100%;
+	height:10%;
+	background-color: #0d2c5a;
+}
+
+#ContactEmail {
+	margin-top: 2%;
+	padding: 1% 3%;
+	background-color: #0062BA;
+	color: #F7FFFF;
+}
+
+#ContactEmail:hover {
+	background-color: rgb(3, 117, 216);
+}
+
+#skill-icons {
+	margin: 5% auto;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto auto;
+	grid-row-gap: 2em;
+}
+
+#skills-content {
+	margin-top: 5%;
+}
+
+#aboutMe-content {
+	margin-top: 10%;
+}
+
+#aboutMe-content div {
+	/* flex-grow: 1; */
+	padding: 5px;
+}
+
+.icon {
+	font-size: 3em;
+}
+
+.icon:hover {
+	color: gold;
+}
+
+.sticky {
+	position:fixed;
+	top: 0;
+	width:100%;
+}
+
+@media(max-width: 800px) {
+	p, h3, li {
+		font-size: 0.75rem;
+	}
+
+	section {
+		padding: 4.16665vw;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	.icon {
+		font-size: 2em;
+	}	
+
+	.RedLine {
+		width: 50vw;
+	}
+
+	.Section h2, .Section-alt h2 {
+		margin-top: 7%;
+		/* font-size: 32px; */
+	}
+	
+	#Portrait {
+		width: 6rem;
+		height: 9rem;
+		margin: auto auto;
+	}
+
+	#aboutMe-content {
+		flex-direction: column;
+	}
+
+	#WelcomeText h1 {
+		font-size: 28px;
+	}
+
+	#WelcomeText h2 {
+		font-size: 26px;
+	}
+}
+
+@media (min-width: 2000px) {
+	p, h3, li, #NavBar {
+		font-size: 2rem;
+	}
+
+	#WelcomeText h1 {
+		font-size: 54px;
+	}
+
+	#WelcomeText h2 {
+		font-size: 48px;
+	}
+
+	.Section h2, .Section-alt h2 {
+		font-size: 48px;
+	}
+
+	.icon {
+		font-size: 5rem;
+	}	
+
+}
